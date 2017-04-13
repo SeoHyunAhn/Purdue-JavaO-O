@@ -323,7 +323,7 @@ IRCServer::initialize()
 {
     userCount=0;
     userArray = (userCheck * )malloc(100 * sizeof(userCheck));
-    FILE *fp= fopen("password.txt", "+w");
+    FILE *fp= fopen("password.txt", "w+");
     char * c = (char * )malloc(100*sizeof(char));
     int i=0;
     while ((c = nextword(fp))!='\0') {
